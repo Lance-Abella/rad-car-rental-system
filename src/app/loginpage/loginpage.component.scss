@@ -92,38 +92,77 @@
 }
 
 .mmargin{
-    margin-top: 7%;
+    margin-top: 3%;
     border-color: black;
     border-radius: 40px;
 }
 
 .mradius{
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    height: 500px;
-    width: 1100px;
-    margin-left: -1%;
-    margin-top: -0.2%;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    // height: 500px;
+    // width: 1100px;
+    margin-left: 0.1%;
+    // margin-top: 0.1%;
     
 }
 
 .mtext{
     font-family: Poppins;
-    
 }
 
 .mheading1{
-    margin-left: -41%;
+    margin-left: -43%;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .mheading2{
-    margin-left: -22.5%;
+    margin-left: -15.6%;
+    margin-top: -2%;
     font-size: 15px;
+}
+
+.mheading3{
+    font-size: 15px;
+}
+
+.mheading4{
+    font-size: 13px;
+}
+
+.mform{
+    margin-top: -2%;
 }
 
 .loginbtn{
     background-color: #db4646;
     color: white;
 }
+
+.loginbtn:hover{
+    background-color: rgba(243, 240, 240, 0.863);
+    color: black;
+    border: 1px solid rgba(99, 93, 93, 0.651)
+}
+
+.mOR{
+    margin-top: -2%;
+    font-weight: 600;
+}
+
+.para3{
+    margin-top: -2%;
+}
+
+.mIcon{
+    margin-left: 41%;
+}
+
+.msignup{
+    color: red;
+}
+
 
 
