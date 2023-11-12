@@ -1,0 +1,91 @@
+.parentContainer{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.child-1{
+    width: 250px;
+    margin-left: 0;
+    height: 100vh;
+    background-color: #F8F1F1;
+    color: black;
+    box-shadow: 5px 0 10px rgb(151, 147, 147);
+    padding: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+.child-2{
+    height: 100vh;
+    width: fit-content;
+    background-color: #F8F1F1;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbtn{
+    color: white;
+    border: none;
+    width: 250px;
+    text-align: start;    
+    background-color: rgb(207, 22, 22);
+    border-radius: 0;
+    margin-top: 70%;
+    display: flex; 
+}
+
+.navbtn:hover{
+    color: black;
+    background-color:  rgb(221, 215, 215);
+}
+
+.active{
+    color: black;
+    background-color: rgb(202, 190, 190);
+}
+
+.iconSize{
+    font-size: 20px;
+}
+
+.child-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.capacity, .type, .cap, .price {
+    margin-bottom: 5px;
+}
+    
+@media (max-width: 768px) {
+    .child-2 {
+        padding: 10px;
+    }
+
+    .image img {
+        max-height: 200px;
+    }
+}
