@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { RegistrationPageComponent } from './registration-page/registration-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatDividerModule } from '@angular/material/divider';
     NavigationBarComponent,
     LoginpageComponent,
     LandingPageComponent,
-    CarsForRentComponent
+    CarsForRentComponent,
+    RegistrationPageComponent
   ],
   imports: [
     BrowserModule,
