@@ -5,12 +5,20 @@
 }
 
 .tag{
-    background-color: rgb(248, 244, 244);   
+    background-color: white;
     padding: .3rem 1rem;
     margin: .2rem .15rem;
     border-radius: 10rem;
-    font-weight: 600;
-    color: rgb(218, 17, 17);
+    font-weight: 400;
+    color: black;
     margin-top: 2%;
     text-decoration: none;
+}
+
+.tag:hover{
+    // background-color: #D9D9D9;
+    // color: black;
+
+    color: white;
+    background-color: rgb(160, 7, 7);
 }

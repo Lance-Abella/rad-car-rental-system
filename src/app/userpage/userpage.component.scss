@@ -1,5 +1,6 @@
 .parentContainer{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -19,25 +20,31 @@
 .child-2{
     height: 100vh;
     width: fit-content;
-    background-color: #ffffff;
+    background-color: rgb(250, 243, 243);
     flex: 1;
+    flex-wrap: wrap;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .child-3{
-    background-color: #ffffff;  
+    background-color: rgb(250, 243, 243);
 }
 
 .navbtn{
     color: black;
     border: none;
-    width: 220px;
-    text-align: start;    
+    width: 228px;
+    height: 50px; 
+    text-align: start; 
+    justify-content: start; 
+    padding-top: 14px;  
     background-color: white;
-    border-radius: 10px;
-    margin-top: 70%;
-    display: flex; 
+    border-radius: 10px !important;
+    margin-top: 15%;
+    display: flex;
+    margin-bottom: 10px; /* Adjust the value to set the desired space between buttons */
+    // border-radius: 5px;
 }
 
 .navbtn:hover{
@@ -47,7 +54,7 @@
 
 .active{
     color: white;
-    background-color: red;
+    background-color: rgb(160, 7, 7);
 }
 
 .btn-nav{
@@ -55,9 +62,18 @@
     padding-right: 10px;
 }
 
+.btn-sign-out{
+    margin-top: 325px !important;
+}
+
 .iconSize{
     font-size: 20px;
+    // background-color: #807b7b;
+
+    // padding-top: 10px;
 }
+
+
 
 ul{
     display: flex;
@@ -71,7 +87,6 @@ ul{
 li a{
     height: 21.8rem;
     width: 20rem;
-    // border: 1px solid black;
     border-radius: 1rem;
     margin: 0.5rem;
     display: flex;
@@ -105,12 +120,13 @@ li a:hover{
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
+    background-color: rgb(160, 7, 7);
 }
 
 .content1{
     color: black;
     padding-left: 3%;
-    background-color: rgb(248, 244, 244);
+    background-color: #ffffff;
     .carname{
         font-weight: 600;
     }
@@ -178,7 +194,7 @@ li a:hover{
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: rgb(248, 244, 244);
+    background-color: #ffffff;
 }
 
 .carPrice{
@@ -198,6 +214,7 @@ li a:hover{
 .bookbtn{
     font-weight: 800;
     margin-top: -7%;
+    background-color: rgb(160, 7, 7);
 }
 
 .book{
