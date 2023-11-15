@@ -1,118 +1,160 @@
 <div class="container-fluid parentContainer">
-    <div class="container-fluid child-1">
-        <P>User's panel</P>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <div class="container child-1">
+
+        <img src="assets\userpage-logo.svg" class="img-fluid" alt="Image">  
+        <div class="btn-group-vertical btn-nav" role="group" aria-label="Vertical button group">
             <button type="button" class="btn navbtn"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" class="iconSize"></mat-icon>HOME</button>
             <button type="button" class="btn navbtn active"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="directions_car" class="iconSize"></mat-icon>CARS FOR RENT</button>
             <button type="button" class="btn navbtn"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="car_rental" class="iconSize"></mat-icon>RENTED VEHICLES</button>
-            <button type="button" class="btn navbtn"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="settings" class="iconSize"></mat-icon>SETTINGS</button>
-            <button type="button" class="btn navbtn"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="logout  " class="iconSize"></mat-icon>SIGN OUT</button>
+            <button type="button" class="btn navbtn btn-sign-out"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="logout  " class="iconSize"></mat-icon>SIGN OUT</button>
         </div>
+
     </div>
 
-    <div class="container-fluid child-2">
-        <div class="image">
-            <img [src]="car.imageUrl" alt="Image"/>
+    <div class="container child-2">
+
+        <div class="container subchild-1">
+
+            <img src="assets\Menu.svg" class="img-fluid btn-menu" alt="Image">
+            <img src="assets\Alarm.svg" class="img-fluid btn-alarm" alt="Image">
+            <img src="assets\Male User.svg" class="img-fluid btn-user" alt="Image">
+            <div class="user-info">            
+                <a href="" class="user-name">LIL BOSS</a><br>
+                <a href="" class="user-type">User</a>
+            </div>
+            <img src="assets\arrow-down.svg" class="img-fluid btn-arrow" alt="Image">
+
         </div>
 
-        <div class="details">
+        <div class="container subchild-2 d-flex">
 
-            <div class="name">
-                {{car.carName}}
-            </div>
+            <div class="container grandchild-1">
 
-            <div class="capacity">
-                {{car.capacity}}
-            </div>
-
-            <div class="type">
-                {{car.carType}}
-            </div>
-
-            <div class="cap">
-                {{car.mileageCap}}
-            </div>
-
-            <div class="price">
-                {{car.price}}
-            </div>
-
-        </div>
-    </div>
-
-    <div class="child-3">
-        <div class="container mt-5">
-            <form>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Booking Details</h4>
-
-                        <div class="form-group">
-                            <label for="fromDate">From Date</label>
-                            <input type="date" class="form-control" id="fromDate" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="toDate">To Date</label>
-                            <input type="date" class="form-control" id="toDate" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="pickupLocation">Pick Up Location</label>
-                            <input type="text" class="form-control" id="pickupLocation" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message (Optional)</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="bookingMoney">Booking Money</label>
-                            <input type="number" class="form-control" id="bookingMoney" placeholder="Advance payment" required>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-                        
-                        <h4>Payment Details</h4>
-                        <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="paymentMethod">Payment Method</label>
-                            <select class="form-control" id="paymentMethod" required>
-                                <option value="creditCard">Credit Card</option>
-                                <option value="debitCard">Debit Card</option>
-                                <option value="paypal">PayPal</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="amount">Amount</label>
-                            <input type="number" class="form-control" id="amount" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="dateOfPayment">Date of Payment</label>
-                            <input type="date" class="form-control" id="dateOfPayment" required>
-                        </div>
-
-                    </div>
+                <div class="name">
+                    {{car.carName}}
                 </div>
 
-                <button type="button" class="btn btn-primary mt-3">Book Now</button>
-            </form>
+                <div class="image">
+                    <img [src]="car.imageUrl" alt="Image"/>
+                </div>
+        
+                <div class="details">                            
+        
+                    <div class="capacity">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="groups" class="groups capacityIcon"></mat-icon><span class="capacityTxt"><strong>Capacity: </strong> </span>{{car.capacity}}
+                    </div>
+        
+                    <div class="type">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="electric_car" class="electricCar"></mat-icon><span class="typeTxt"><strong>Car Type: </strong></span>{{car.carType}}
+                    </div>
+        
+                    <div class="cap">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="gas_meter" class="mileage"></mat-icon><span class="mileageTxt"><strong>Mileage Cap: </strong></span>{{car.mileageCap}}
+                    </div>
+        
+                    <div class="price">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="car_rental" class="rentIcon"></mat-icon><span class="priceTxt"><strong>Price[24 hours]: </strong></span>₱{{car.price}}
+                    </div>
+        
+                </div>
+
+            </div>
+
+            <div class="container grandchild-2">
+
+                <div class="container mt-4">
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Booking Details</h4>
+        
+                                <div class="form-group mb-1">
+                                    <label for="fromDate">From Date</label>
+                                    <input type="date" class="form-control" id="fromDate" required>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="toDate">To Date</label>
+                                    <input type="date" class="form-control" id="toDate" required>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="pickupLocation">Pick Up Location</label>
+                                    <input type="text" class="form-control" id="pickupLocation" required>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="message">Message (Optional)</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="price">Price</label>
+                                    <input type="number" class="form-control" id="price" required>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="bookingMoney">Booking Money</label>
+                                    <input type="number" class="form-control" id="bookingMoney" placeholder="Advance payment" required>
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-md-6">
+                                
+                                <h4>Payment Details</h4>
+                                <div class="form-group mb-1">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="paymentMethod">Payment Method</label>
+                                    <select class="form-control" id="paymentMethod" required>
+                                        <option value="creditCard">Credit Card</option>
+                                        <option value="debitCard">Debit Card</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="amount">Amount</label>
+                                    <input type="number" class="form-control" id="amount" required>
+                                </div>
+        
+                                <div class="form-group mb-1">
+                                    <label for="dateOfPayment">Date of Payment</label>
+                                    <input type="date" class="form-control" id="dateOfPayment" required>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                        <button type="button" class="btn btn-primary mt-3 bookbtn">Book Now</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
 
     </div>
+
+
+
 </div>
+
+   
+
+    <div class="container child-2">
+        
+        
+    </div>
+
+    <!-- <div class="child-3">
+          -->
+
+
+    
+    
 
