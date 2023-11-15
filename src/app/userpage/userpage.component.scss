@@ -30,24 +30,29 @@
 }
 
 .navbtn{
-    color: white;
+    color: black;
     border: none;
-    width: 250px;
+    width: 220px;
     text-align: start;    
-    background-color: rgb(207, 22, 22);
-    border-radius: 0;
+    background-color: white;
+    border-radius: 10px;
     margin-top: 70%;
     display: flex; 
 }
 
 .navbtn:hover{
-    color: black;
-    background-color: rgb(221, 215, 215);
+    color: white;
+    background-color: rgb(173, 167, 167);
 }
 
 .active{
-    color: black;
-    background-color: rgb(202, 190, 190);
+    color: white;
+    background-color: red;
+}
+
+.btn-nav{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .iconSize{
