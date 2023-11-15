@@ -9,7 +9,7 @@
     width: 250px;
     margin-left: 0;
     height: 100vh;
-    background-color: #F8F1F1;
+    background-color: #ffffff;
     color: black;
     box-shadow: 5px 0 10px rgb(151, 147, 147);
     padding: 0;
@@ -19,14 +19,14 @@
 .child-2{
     height: 100vh;
     width: fit-content;
-    background-color: #F8F1F1;
+    background-color: #ffffff;
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .child-3{
-    background-color: #F8F1F1;  
+    background-color: #ffffff;  
 }
 
 .navbtn{
@@ -105,7 +105,7 @@ li a:hover{
 .content1{
     color: black;
     padding-left: 3%;
-    background-color: white;
+    background-color: rgb(248, 244, 244);
     .carname{
         font-weight: 600;
     }
@@ -173,7 +173,7 @@ li a:hover{
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: white;
+    background-color: rgb(248, 244, 244);
 }
 
 .carPrice{
