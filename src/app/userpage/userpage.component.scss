@@ -6,6 +6,8 @@
     padding: 0;
 }
 
+//--------------CHILD-1-------------
+
 .child-1{
     width: 250px;
     margin-left: 0;
@@ -15,20 +17,6 @@
     box-shadow: 5px 0 10px rgb(151, 147, 147);
     padding: 0;
     border-right: 1px solid rgba(0, 0, 0, 0.267);
-}
-
-.child-2{
-    height: 100vh;
-    width: fit-content;
-    background-color: rgb(250, 243, 243);
-    flex: 1;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.child-3{
-    background-color: rgb(250, 243, 243);
 }
 
 .navbtn{
@@ -69,6 +57,26 @@
     font-size: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
+.rent{
+    margin-top: -15%;
+}
+
+
+//----------CHILD-2----------------
+
+.child-2{
+    height: 100vh;
+    width: fit-content;
+    background-color: rgb(250, 243, 243);
+    flex: 1;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
 
 ul{
@@ -184,6 +192,9 @@ li a:hover{
 .cap{
     font-weight: 900;
 }
+
+
+//------------CONTENT-2---------------
 
 .content2{
     border-top: 1px solid black;

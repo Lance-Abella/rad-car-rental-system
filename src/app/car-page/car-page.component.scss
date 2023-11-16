@@ -60,6 +60,10 @@
     font-size: 20px;
 }
 
+.rent{
+    margin-top: -15.5%;
+}
+
 
 
 //---------------CHILD-2-----------//
@@ -78,15 +82,27 @@
     margin-top: 3%;
 }
 
+a{
+    text-decoration: none;
+}
+
+.backbtn{
+    cursor: pointer;
+    margin-top: 0.2%;
+    margin-left: 0.5%;
+    font-weight: bold;
+}
+
 .btn-menu{
     width: 33px;
     height: 30px;
+    margin-left: 1.5%;
 }
     
 .btn-alarm{
     width: 35px;
     height: 30px;
-    margin-left: 78.8%;
+    margin-left: 74.5%;
 }
     
 .btn-user{
