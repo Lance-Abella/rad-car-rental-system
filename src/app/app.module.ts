@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
 import { CarPageComponent } from './car-page/car-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RentedCarPageComponent } from './rented-car-page/rented-car-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UserpageComponent,
     SearchComponent,
     TagsComponent,
-    CarPageComponent
+    CarPageComponent,
+    RentedCarPageComponent
   ],
   imports: [
     BrowserModule,
